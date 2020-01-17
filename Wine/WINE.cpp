@@ -10,16 +10,16 @@ WINE::WINE(const char* l, int y)
 {
     label = l;
     yrs = y;
-    pair.first = {0};
-    pair.second = {0};
+    pair.first.resize(yrs);
+    pair.second.resize(yrs);
 }
 
 WINE::WINE(const char* l, int y, const int yr[], const int bot[])
 {
     label = l;
     yrs = y;
-    pair.first = { 0 };
-    pair.second = { 0 };
+    pair.first.resize(yrs);
+    pair.second.resize(yrs);
     for (int i = 0; i < yrs; i++)
     {
         pair.first[i] = yr[i];
