@@ -54,8 +54,5 @@ string& WINE::Label()
 
 int WINE::sum()
 {
-    int sum = 0;
-    for (int i = 0; i < yrs; i++)
-        sum += pair.second[i];
-    return sum;
+    return pair.second.sum();
 }
